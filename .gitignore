@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CreateString/x64/Debug
+/.vs
+/CreateString/Debug
+/x64/Debug
+/Debug
+/CreateString/Release
+/Release/CreateString.pdb
