@@ -144,6 +144,7 @@ wchar_t* MakeLiteral(const wchar_t* input, BOOL bMacro, BOOL bwchar)
 
             continue;
         }
+        
         if (p[0] == '"')
         {
             p++;
@@ -151,6 +152,17 @@ wchar_t* MakeLiteral(const wchar_t* input, BOOL bMacro, BOOL bwchar)
             *p_out = L'\\';
             p_out++;
             *p_out = L'\"';
+            p_out++;
+            continue;
+        }
+
+        if (p[0] == '\\')
+        {
+            p++;
+
+            *p_out = L'\\';
+            p_out++;
+            *p_out = L'\\';
             p_out++;
             continue;
         }
