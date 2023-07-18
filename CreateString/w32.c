@@ -446,7 +446,7 @@ BOOL DialogTemplate_SetTemplate(struct DialogTemplate* pThis, const DLGTEMPLATE*
 
 
 
-BOOL IsWindowsXPOrGreater()
+BOOL IsWindowsXPOrGreater(void)
 {
 #pragma warning( push )
 #pragma warning( disable : 4996 )

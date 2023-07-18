@@ -10,4 +10,4 @@ INT_PTR ShowDialog(HINSTANCE hInstance,
                    HWND hParent,
                    DLGPROC lpDialogFunc);
 
-BOOL IsWindowsXPOrGreater();
+BOOL IsWindowsXPOrGreater(void);
